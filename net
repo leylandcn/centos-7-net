@@ -1,0 +1,5 @@
+#!/bin/bash
+
+tmp=`cat /sys/class/net/*/address|grep -m1 -v "00:00:00:00:00:00"`
+
+echo 'ACTION=="add", SUBSYSTEM=="net", DRIVERS=="?*", ATTR{address}=="'$tmp'", NAME="eth0"'
