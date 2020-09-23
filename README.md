@@ -1,1 +1,1 @@
-# centos7-net
+# centos-7-net
